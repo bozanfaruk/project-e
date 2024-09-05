@@ -4,28 +4,14 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.farukbozan.projecte</groupId>
+    <parent>
+        <groupId>com.farukbozan.projecte</groupId>
+        <artifactId>projecte-parent</artifactId>
+        <version>1.0.0</version>
+    </parent>
+
     <artifactId>design-patterns</artifactId>
     <version>1.0.0</version>
-
-    <properties>
-        <java.version>21</java.version>
-        <maven.compiler.source>21</maven.compiler.source>
-        <maven.compiler.target>21</maven.compiler.target>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-
-        <junit.jupiter.api.version>5.11.0</junit.jupiter.api.version>
-    </properties>
-
-    <dependencies>
-
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-api</artifactId>
-            <version>${junit.jupiter.api.version}</version>
-            <scope>test</scope>
-        </dependency>
-
-    </dependencies>
+    <name>design-patterns</name>
 
 </project>
