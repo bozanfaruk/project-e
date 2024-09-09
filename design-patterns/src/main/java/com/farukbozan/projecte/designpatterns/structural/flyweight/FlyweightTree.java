@@ -6,12 +6,12 @@ public class FlyweightTree {
 
     private int y;
 
-    private IntrinsicTree intrinsicTree;
+    private ExtrinsicTree extrinsicTree;
 
-    public FlyweightTree(int x, int y, IntrinsicTree intrinsicTree) {
+    public FlyweightTree(int x, int y, ExtrinsicTree extrinsicTree) {
         this.x = x;
         this.y = y;
-        this.intrinsicTree = intrinsicTree;
+        this.extrinsicTree = extrinsicTree;
     }
 
     public int getX() {
@@ -30,12 +30,12 @@ public class FlyweightTree {
         this.y = y;
     }
 
-    public IntrinsicTree getIntrinsicTree() {
-        return intrinsicTree;
+    public ExtrinsicTree getIntrinsicTree() {
+        return extrinsicTree;
     }
 
-    public void setIntrinsicTree(IntrinsicTree intrinsicTree) {
-        this.intrinsicTree = intrinsicTree;
+    public void setIntrinsicTree(ExtrinsicTree extrinsicTree) {
+        this.extrinsicTree = extrinsicTree;
     }
 
 }

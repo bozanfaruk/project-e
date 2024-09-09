@@ -32,12 +32,12 @@ class FlyweightTest {
     void should_create_flyweight_object() {
         //GIVEN
         FlyweightTree[] flyweightTrees = new FlyweightTree[TREE_COUNT];
-        IntrinsicTree intrinsicTree = new IntrinsicTree("Green Tree", Color.GREEN);
+        ExtrinsicTree extrinsicTree = new ExtrinsicTree("Green Tree", Color.GREEN);
 
         //WHEN
         long startMemory = Runtime.getRuntime().freeMemory();
         for (int i = 0; i < TREE_COUNT; i++) {
-            flyweightTrees[i] = new FlyweightTree(i, i, intrinsicTree);
+            flyweightTrees[i] = new FlyweightTree(i, i, extrinsicTree);
         }
         long diffMemory = startMemory - Runtime.getRuntime().freeMemory();
 
