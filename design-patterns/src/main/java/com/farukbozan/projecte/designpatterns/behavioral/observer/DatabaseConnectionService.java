@@ -24,15 +24,12 @@ public class DatabaseConnectionService {
 
     public void connectToDatabase() {
         int connectionId = random.nextInt(100);
-        for (DatabaseListener databaseListener : databaseListeners) {
-            databaseListener.onConnect(new ConnectEvent(LocalDateTime.now(), connectionId));
-        }
+        databaseListeners.forEach(databaseListener -> databaseListener.onConnect(new ConnectEvent(LocalDateTime.now(), connectionId)));
     }
 
     public void disconnectFromDatabase() {
-        for (DatabaseListener databaseListener : databaseListeners) {
-            databaseListener.onDisconnect(new DisconnectEvent(LocalDateTime.now(), "Connection is not available!!!"));
-        }
+        databaseListeners.forEach(databaseListener -> databaseListener.onDisconnect(new DisconnectEvent(LocalDateTime.now(),
+                                                                                                        "Connection is not available!!!")));
     }
 
 }
