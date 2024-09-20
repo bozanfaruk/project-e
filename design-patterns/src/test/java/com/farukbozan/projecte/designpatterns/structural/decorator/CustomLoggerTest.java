@@ -3,6 +3,7 @@ package com.farukbozan.projecte.designpatterns.structural.decorator;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 class CustomLoggerTest {
 
@@ -21,7 +22,7 @@ class CustomLoggerTest {
 
         //THEN
         assertEquals(message, customLog);
-        assertEquals("[B@11c20519", byteLog);
+        assertNotNull(byteLog);
         assertEquals("hasfjdhgasdşalsd This is a log", encodedLog);
     }
 
