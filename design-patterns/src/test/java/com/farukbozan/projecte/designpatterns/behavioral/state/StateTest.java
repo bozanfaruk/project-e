@@ -1,9 +1,5 @@
-package com.farukbozan.projecte.designpatterns.structural.state;
+package com.farukbozan.projecte.designpatterns.behavioral.state;
 
-import com.farukbozan.projecte.designpatterns.behavioral.state.ActiveState;
-import com.farukbozan.projecte.designpatterns.behavioral.state.Context;
-import com.farukbozan.projecte.designpatterns.behavioral.state.HalfOpenState;
-import com.farukbozan.projecte.designpatterns.behavioral.state.PassiveState;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
