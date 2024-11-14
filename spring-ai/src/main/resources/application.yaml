@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: spring-ai
+
+  ai:
+    openai:
+      api-key: "Your Open AI API key"
+      chat:
+        options:
+          model: gpt-4o
+
+    vectorstore:
+      pgvector:
+        initialize-schema: true
+
+  docker:
+    compose:
+      lifecycle-management: start_only
+
+weather:
+  api-key: "Your API key"
+  api-url: http://api.weatherapi.com/v1
